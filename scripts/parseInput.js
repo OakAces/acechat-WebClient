@@ -1,44 +1,46 @@
 
-  function parseInput()
-  {
-    var msgTxt = document.getElementById("chat-prompt").value;
-    var msgArr = msgTxt.split(" ");
-    var msg;
-    document.getElementById("chat-prompt").value = "";
+function parseInput()
+{
+	var msgTxt = document.getElementById("chat-prompt").value;
+	var msgArr = msgTxt.split(" ");
+	var msg;
+	document.getElementById("chat-prompt").value = "";
 
-    //msg
+	if(channel != null)
+	{
+		//msg
 		if (msgTxt.match(/^\/msg\s*$/) || msgTxt.match(/^\/msg\s+\S+\s*$/)) 
 		{
 			errorHandler("/msg must accept at least two arguments");
 		}
-    //if input begins with /msg validUsrName, send private message
+		//if input begins with /msg validUsrName, send private message
 		else if (msgTxt.match(/^\/msg(\s)+/) && !!~usrList.indexOf(msgArr[1]))
-    {
-      msgArr.shift();
+		{
+			msgArr.shift();
 			u = msgArr[0];
-      msgArr.shift();
-      msgTxt = msgArr.join(" ");
-      msg = {
-							"command" : "PRIVMSG",
-							"args" : [u,msgTxt]
-						};
-      send(msg);
+			msgArr.shift();
+			msgTxt = msgArr.join(" ");
+			msg = {
+				"command" : "PRIVMSG",
+				"args" : [u,msgTxt]
+			};
+			send(msg);
 
 			msg = {
-							"user" : "[PRV] -> "+u,
-							"command" : "MSG",
-							"args" : [channel.name, msgTxt],
-							"timestamp" : new Date().getTime()/1000
-						};
+				"user" : "[PRV] -> "+u,
+				"command" : "MSG",
+				"args" : [channel.name, msgTxt],
+				"timestamp" : new Date().getTime()/1000
+			};
 			channel.messages.push(msg);
 			printChannelMessages(channel);
-    }
+		}
 
 		//if input begins with /msg invalidUsrName, throw error
 		else if (msgTxt.match(/^\/msg(\s|$)/) && !~usrList.indexOf(msgArr[1]))
-    {
+		{
 			errorHandler("Invalid User Name");
-    }
+		}
 
 		//join
 		else if(msgTxt.match(/^\/join\s+[A-z0-9]{1,10}$/))
@@ -55,7 +57,7 @@
 		{
 			errorHandler("Invalid channel name");
 		}
-		
+
 		//part
 		else if(msgTxt.match(/^\/part\s+\S+[.]*/))
 		{
@@ -74,23 +76,23 @@
 			part(channel);
 		}
 
-    //logout, logoff
-    //**parts all channels**, logs out
+		//logout, logoff
+		//**parts all channels**, logs out
 		//ideally would part all channels, but it doesn't, and that's okay too.
-    else if (msgTxt.match(/^\/logoff(\s|$)/) || msgTxt.match(/^\/logout(\s|$)/))
-    {
+		else if (msgTxt.match(/^\/logoff(\s|$)/) || msgTxt.match(/^\/logout(\s|$)/))
+		{
 			logout();
-    }
+		}
 
 		//whoami
 		else if (msgTxt.match(/^\/whoami\s*/))
 		{
 			msg = {
-							"user" : "AceChat",
-							"command" : "SYSTEM",
-							"args" : [channel.name, userName],
-							"timestamp" : new Date().getTime()/1000
-						};
+				"user" : "AceChat",
+				"command" : "SYSTEM",
+				"args" : [channel.name, userName],
+				"timestamp" : new Date().getTime()/1000
+			};
 			channel.messages.push(msg);
 			printChannelMessages(channel);
 		}
@@ -132,15 +134,15 @@
 					msgTxt = msgTxt.slice(0,-2);
 					msgTxt += "] to "+channel.name+".";
 					msg = {
-										"user" : "AceChat",
-										"command" : "SYSTEM",
-										"args" : [channel.name, msgTxt],
-										"timestamp" : new Date().getTime()/1000
-								};
+						"user" : "AceChat",
+						"command" : "SYSTEM",
+						"args" : [channel.name, msgTxt],
+						"timestamp" : new Date().getTime()/1000
+					};
 					channel.messages.push(msg);
 					printChannelMessages(channel);
 					sentTo.unshift(channel.name)
-					invite(sentTo);
+						invite(sentTo);
 				}
 				else
 				{
@@ -153,15 +155,15 @@
 					msgTxt = msgTxt.slice(0,-2);
 					msgTxt +="] to "+channel.name+". Some users could not be invited.";
 					msg = {
-										"user" : "AceChat",
-										"command" : "SYSTEM",
-										"args" : [channel.name, msgTxt],
-										"timestamp" : new Date().getTime()/1000
-								};
+						"user" : "AceChat",
+						"command" : "SYSTEM",
+						"args" : [channel.name, msgTxt],
+						"timestamp" : new Date().getTime()/1000
+					};
 					channel.messages.push(msg);
 					printChannelMessages(channel);
 					sentTo.unshift(channel.name)
-					invite(sentTo);
+						invite(sentTo);
 				}
 			}
 			else
@@ -190,11 +192,11 @@
 			msgArr.shift();
 			msgTxt = msgArr.join(" ");
 			msgTxt = "\\protocol000"+msgTxt+"\\000";
-      msg = {
-              "command" : "MSG",
-							"args" : [channel.name, msgTxt]
-						};
-      send(msg);
+			msg = {
+				"command" : "MSG",
+				"args" : [channel.name, msgTxt]
+			};
+			send(msg);
 		}
 		else if (msgTxt.match(/^\/me\s*$/))
 		{
@@ -207,30 +209,53 @@
 			msgArr.shift();
 			msgTxt = msgArr.join(" ");
 			msgTxt = "\\protocol001"+msgTxt+"\\001";
-      msg = {
-              "command" : "MSG",
-							"args" : [channel.name, msgTxt]
-						};
-      send(msg);
+			msg = {
+				"command" : "MSG",
+				"args" : [channel.name, msgTxt]
+			};
+			send(msg);
 		}
 		else if (msgTxt.match(/^\/party\s*$/))
 		{
 			errorHandler("You need more arguments to party!");
 		}
-		
+
+		//user, server
+		else if(msgArr[0] == "/user" || msgArr[0] == "/server")
+		{
+			errorHandler("Please log out first.");
+		}
+
 		//invalid command
 		else if (msgTxt.match(/^\/.*/) || msgTxt.match(/^\\.*/))
 		{
 			errorHandler("Invalid Command");
 		}
 
-	  //default, send message to current channel
-    else if (msgTxt != "" && msgTxt != null)
+		//default, send message to current channel
+		else if (msgTxt != "" && msgTxt != null)
 		{
-      msg = {
-              "command" : "MSG",
-							"args" : [channel.name, msgTxt]
-						};
-      send(msg);
-    }
-  }
+			msg = {
+				"command" : "MSG",
+				"args" : [channel.name, msgTxt]
+			};
+			send(msg);
+		}
+	}
+	else if (channel == null)
+	{
+		if(msgArr[0] == "/user")
+		{
+			userName = msgArr[1];
+
+			if(userName.toLowerCase() == "acechat"|| !userName.match(/^[A-z0-9]{1,10}$/))
+				errorHandler("Invalid Username");
+			else
+				login();
+		}
+		else if(msgArr[0] == "/server")
+		{
+			server = msgArr[1];
+		}
+	}
+}

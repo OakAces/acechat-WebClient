@@ -1,6 +1,9 @@
 	function logout()
 	{
-		createCookie("user","",-1);
-		sock.close();
-		window.location="login.html";
+		userName="";
+		try{
+			sock.close();
+		}catch(err)
+		{}
+		location.reload();
 	}

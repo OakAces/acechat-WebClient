@@ -9,8 +9,13 @@
 						"timestamp" : new Date().getTime()/1000
 					};
 
-		channel.messages.push(msg);
-		printChannelMessages(channel);
+		try{
+			channel.messages.push(msg);
+			printChannelMessages(channel);
+		}catch(err)
+		{
+			printMsg(msg);
+		}
 		
 	}
 

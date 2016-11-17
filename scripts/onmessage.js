@@ -147,5 +147,12 @@
 			case "ERROR":
 				errorHandler(msg.args[0]);
 				break;
+			case "PING":
+				msg = {
+								"command" : "PONG",
+								"args" : []
+							};
+				send(msg);
+				break;
 		}
 	};

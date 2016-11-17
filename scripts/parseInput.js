@@ -249,7 +249,7 @@ function parseInput()
 			userName = msgArr[1];
 
 			if(userName.toLowerCase() == "acechat"|| !userName.match(/^[A-z0-9]{1,10}$/))
-				errorHandler("Invalid Username");
+				errorHandler("Invalid Username. Username must be 1-10 alphanumeric characters");
 			else
 				login();
 		}

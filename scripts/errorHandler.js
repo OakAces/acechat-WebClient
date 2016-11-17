@@ -14,7 +14,7 @@
 			printChannelMessages(channel);
 		}catch(err)
 		{
-			printMsg(msg);
+			window.alert("ERROR: "+e);
 		}
 		
 	}

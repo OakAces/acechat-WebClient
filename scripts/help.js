@@ -5,7 +5,7 @@
 		msgTxt += "Channels you are in will have an asterisk * before their names in the channel list.<br>";
 		msgTxt += "Channels with unread messages will have an exclamation point ! after their names.<br>";
 		msgTxt += "Mandatory arguments to commands are denoted by angle brackets &lt;&gt;<br>";
-		msgTxt += "Optional arguments to commands are dentoted by square brackets []<br><br>";
+		msgTxt += "Optional arguments to commands are denoted by square brackets []<br><br>";
 
 		//join
 		msgTxt += "/join &lt;channel&gt;............................join a channel<br>";

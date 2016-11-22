@@ -1,9 +1,10 @@
 	function logout()
 	{
 		userName="";
-		try{
+		/*try{
 			sock.close();
 		}catch(err)
 		{}
+		*/
 		location.reload();
 	}

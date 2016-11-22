@@ -5,9 +5,9 @@
 		msgTxt += "Channels you are in will have an asterisk * before their names in the channel list.<br>";
 		msgTxt += "Channels with unread messages will have an exclamation point ! after their names.<br>";
 		msgTxt += "Mandatory arguments to commands are denoted by angle brackets &lt;&gt;<br>";
-		msgTxt += "Optional arguments to commands are denoted by square brackets []<br><br>";
+		msgTxt += "Optional arguments to commands are denoted by square brackets []<br>";
 		msgTxt += "/user and /server are only available before you log in. /toggleTheme is always available.<br>";
-		msgTxt += "All other commands are only available to logged in users.<br>";
+		msgTxt += "All other commands are only available to logged in users.<br><br>";
 
 		//join
 		msgTxt += "/join &lt;channel&gt;............................join a channel<br>";

@@ -6,6 +6,8 @@
 		msgTxt += "Channels with unread messages will have an exclamation point ! after their names.<br>";
 		msgTxt += "Mandatory arguments to commands are denoted by angle brackets &lt;&gt;<br>";
 		msgTxt += "Optional arguments to commands are denoted by square brackets []<br><br>";
+		msgTxt += "/user and /server are only available before you log in. /toggleTheme is always available.<br>";
+		msgTxt += "All other commands are only available to logged in users.<br>";
 
 		//join
 		msgTxt += "/join &lt;channel&gt;............................join a channel<br>";
@@ -32,10 +34,19 @@
 		msgTxt += "&lt;message&gt;..................................send message to your current channel<br>";
 
 		//me
-		msgTxt += "/me &lt;message&gt;..............................perform an action<br>";
+		msgTxt += "/me &lt;message&gt;..............................roleplay! emote!<br>";
 
 		//party
 		msgTxt += "/party &lt;message&gt;...........................throw a party<br>";
+
+		//user
+		msgTxt += "/user &lt;userName&gt;...........................log in (only available to logged out users)<br>";
+
+		//server
+		msgTxt += "/server &lt;server&gt;...........................tell AceChat to connect to a non-default server<br>";
+
+		//toggleTheme
+		msgTxt += "/toggleTheme...............................toggle between the Light and Dark themes<br>";
 
 		//help
 		msgTxt += "/help......................................show this dialog";

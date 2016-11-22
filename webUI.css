@@ -5,7 +5,6 @@
 	word-wrap: break-word;
 	height:94%;
 	width:99%;
-  color:white;
   background: #404040;
 }
 #chat-log
@@ -44,7 +43,6 @@
 .channel-button
 {
   background : none;
-  color:white;
 	word-wrap: break-word;
   border: none;
 }
@@ -55,7 +53,6 @@
 .online-button
 {
   background : none;
-  color:white;
   border: none;
 	word-wrap: break-word;
 }
@@ -83,7 +80,6 @@
 {
   width:85%;
   background:#262626;
-  color:white;
   float:right;
   height: 3%;
 }
@@ -100,7 +96,6 @@
   width:15%;
   height:97%;
   background-color:#333333;
-  color:white;
 	display:flex;
 	flex-flow:column;
   text-align: center;
@@ -141,6 +136,7 @@ h3
   overflow: hidden;
   background: black;
 	font-size:14px;
+  color:white;
 	font-family:monospace;
 }
 

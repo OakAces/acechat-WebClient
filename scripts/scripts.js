@@ -6,6 +6,7 @@
   var channels = [];
 	var chanList = [];
 	var focus = true;
+	var theme = "light";
 	var sock;
 
 	msg = {

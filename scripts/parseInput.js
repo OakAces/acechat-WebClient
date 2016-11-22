@@ -226,6 +226,12 @@ function parseInput()
 			errorHandler("Please log out first.");
 		}
 
+		//theme (logged in)
+		else if (msgTxt.match(/^\/toggleTheme\s*$/))
+		{
+			toggleTheme();
+		}
+
 		//invalid command
 		else if (msgTxt.match(/^\/.*/) || msgTxt.match(/^\\.*/))
 		{
@@ -256,6 +262,12 @@ function parseInput()
 		else if(msgArr[0] == "/server")
 		{
 			server = msgArr[1];
+		}
+
+		//theme (logged out)
+		else if (msgTxt.match(/^\/toggleTheme\s*$/))
+		{
+			toggleTheme();
 		}
 	}
 }

@@ -1,14 +1,7 @@
-<!-- NOTE:: This uses a cookie to pass the username from the login screen
-	    to the client screen. Chrome does not support cookies for local 
-	    files. It works in Chrome when deployed, but it must
-	    be tested locally in a different browser - no longer true; works locally 
-			in chrome if pointed to local server
--->
-
 <html>
   <head>
 
-    <link rel="stylesheet" type="text/css" href="webUI.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="light.css">
 		<title id="title">AceChat</title>
 
   </head>
@@ -36,7 +29,7 @@
       </h3>
       <div id="online-list">
       </div>
-			<h2 id="online-channel-header">
+			<h3 id="online-channel-header">
 			</h2>
 			<div id="online-channel-list">
 			</div>
@@ -95,3 +88,4 @@
 <script type="text/javascript" src="scripts/printChannelMessages.js"></script>
 <script type="text/javascript" src="scripts/login.js"></script>
 <script type="text/javascript" src="scripts/disconnect.js"></script>
+<script type="text/javascript" src="scripts/toggleTheme.js"></script>

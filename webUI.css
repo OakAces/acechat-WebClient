@@ -59,7 +59,7 @@
 }
 .left-column
 {
-  background:#191919;
+  background:#00006b;
   color: white;
   width:14.5%;
   text-align: center;
@@ -96,7 +96,7 @@
 {
   width:15%;
   height:97%;
-  background-color:#333333;
+  background-color:#00006b;
 	display:flex;
 	flex-flow:column;
   text-align: center;
@@ -105,7 +105,7 @@
 .center
 {
   width:70%;
-  background-color:black;
+  background-color:#00006b;
   float:right;
 }
 #online-list

@@ -80,7 +80,8 @@
 .top-bar
 {
   width:85%;
-  background:#262626;
+  background:#012f3c;
+	color:white;
   float:right;
   height: 3%;
 }

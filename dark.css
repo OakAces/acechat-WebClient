@@ -3,10 +3,10 @@
 	overflow-y:auto;
 	overflow-x:hidden;
 	word-wrap: break-word;
-	background:#b9b9d9;
-	color:black;
 	height:94%;
 	width:99%;
+  color:white;
+  background: #404040;
 }
 #chat-log
 {
@@ -44,6 +44,7 @@
 .channel-button
 {
   background : none;
+  color:white;
 	word-wrap: break-word;
   border: none;
 }
@@ -54,12 +55,13 @@
 .online-button
 {
   background : none;
+  color:white;
   border: none;
 	word-wrap: break-word;
 }
 .left-column
 {
-  background:#013c4c;
+  background:#191919;
   color: white;
   width:14.5%;
   text-align: center;
@@ -70,7 +72,7 @@
 }
 #channel-list
 {
-  background-color:#b9b9d9;
+  background-color:#404040;
   width:auto;
 	flex: 1 1 auto;
   overflow:auto;
@@ -80,8 +82,8 @@
 .top-bar
 {
   width:85%;
-  background:#012f3c;
-	color:white;
+  background:#262626;
+  color:white;
   float:right;
   height: 3%;
 }
@@ -97,7 +99,8 @@
 {
   width:15%;
   height:97%;
-  background-color:#013c4c;
+  background-color:#333333;
+  color:white;
 	display:flex;
 	flex-flow:column;
   text-align: center;
@@ -106,12 +109,12 @@
 .center
 {
   width:70%;
-  background-color:#00556d;
+  background-color:black;
   float:right;
 }
 #online-list
 {
-  background-color:#b9b9d9;
+  background-color:#404040;
   width:auto;
   overflow:auto;
 	flex: 1 1 auto;
@@ -119,26 +122,25 @@
 }
 #online-channel-list
 {
-	background-color:#b9b9d9;
+	background-color:#404040;
 	width:auto;
 	flex: 1 1 auto;
 	overflow:auto;
 }
 #online-channel-header
 {
+	background:#333333;
 	overflow-x:hidden;
 }
 h3
 {
 	height:auto;
-	background:none;
 }
 .body
 {
   overflow: hidden;
-	background:#00556d;
+  background: black;
 	font-size:14px;
-  color:white;
 	font-family:monospace;
 }
 
@@ -161,7 +163,6 @@ a
   font-size: 20px;
   width: 99%; 
 	height:23px;
-	background:#00556d;
 	display: flex; 
   flex-flow:row;
 }

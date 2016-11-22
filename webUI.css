@@ -59,7 +59,7 @@
 }
 .left-column
 {
-  background:#00006b;
+  background:#191919;
   color: white;
   width:14.5%;
   text-align: center;
@@ -96,7 +96,7 @@
 {
   width:15%;
   height:97%;
-  background-color:#00006b;
+  background-color:#333333;
 	display:flex;
 	flex-flow:column;
   text-align: center;
@@ -105,7 +105,7 @@
 .center
 {
   width:70%;
-  background-color:#00006b;
+  background-color:black;
   float:right;
 }
 #online-list
@@ -135,7 +135,7 @@ h3
 .body
 {
   overflow: hidden;
-	background:black;
+	background:#00006b;
 	font-size:14px;
   color:white;
 	font-family:monospace;

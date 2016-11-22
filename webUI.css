@@ -3,7 +3,7 @@
 	overflow-y:auto;
 	overflow-x:hidden;
 	word-wrap: break-word;
-	background:Lavender;
+	background:#b9b9d9;
 	color:black;
 	height:94%;
 	width:99%;
@@ -70,7 +70,7 @@
 }
 #channel-list
 {
-  background-color:Lavender;
+  background-color:#b9b9d9;
   width:auto;
 	flex: 1 1 auto;
   overflow:auto;
@@ -110,7 +110,7 @@
 }
 #online-list
 {
-  background-color:Lavender;
+  background-color:#b9b9d9;
   width:auto;
   overflow:auto;
 	flex: 1 1 auto;
@@ -118,7 +118,7 @@
 }
 #online-channel-list
 {
-	background-color:Lavender;
+	background-color:#b9b9d9;
 	width:auto;
 	flex: 1 1 auto;
 	overflow:auto;

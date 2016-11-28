@@ -2,15 +2,19 @@
 
 Web client for the AceChat chat server
 
-![](https://raw.githubusercontent.com/OakAces/acechat-WebClient/master/docs/images/screenshot19.png)
+![](https://raw.githubusercontent.com/OakAces/acechat-WebClient/master/docs/images/screenshot22.png)
 *Screenshot of login dialog. There used to be a separate login page, but
 it has since been streamlined into one page*
 
-![](https://raw.githubusercontent.com/OakAces/acechat-WebClient/master/docs/images/screenshot21.png)
+![](https://raw.githubusercontent.com/OakAces/acechat-WebClient/master/docs/images/screenshot23.png)
 *Users are not prompted with the rules for a valid user name unless they enter an invalid name*
 
-![](https://raw.githubusercontent.com/OakAces/acechat-WebClient/master/docs/images/screenshot20.png)
+![](https://raw.githubusercontent.com/OakAces/acechat-WebClient/master/docs/images/screenshot24.png)
 *Screenshot of web UI*
+
+![](https://raw.githubusercontent.com/OakAces/acechat-WebClient/master/docs/images/screenshot25.png)
+*Users can access the orginal Dark theme by typing /toggleTheme*
+
 
 #User Commands
 

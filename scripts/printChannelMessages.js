@@ -38,9 +38,5 @@
 			document.getElementById("chat-log-wrapper").scrollTop=document.getElementById("chat-log-wrapper").scrollHeight;
 		}
 
-		if(!focus)
-		{
-			document.getElementById('title').innerHTML="AceChat - New Message!";
-		}
 		
 	}

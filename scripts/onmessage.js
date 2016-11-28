@@ -68,6 +68,10 @@
 					channels[getChannel(msg.args[0])].newMessage = true;
 					populateChannelList();
 				}
+				if(!focus)
+				{
+					document.getElementById('title').innerHTML="AceChat - New Message!";
+				}
 				printChannelMessages(channel);
 				break;
 			case "PRIVMSG":

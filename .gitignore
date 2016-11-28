@@ -3,4 +3,3 @@
 *.out
 /docs/*.pdf
 !UML.pdf
-flowchart.xml

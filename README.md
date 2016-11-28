@@ -26,6 +26,7 @@ Command|Explanation
 \<message\>|Send a message
 /me \<message\>|Roleplay
 /party \<message\>|Throw a party 
+/toggleTheme|Toggle between the Light and Dark themes
 /user \<userName\>|Set your userName (must be logged out)
 /server \<server\>|Set the server address (must be logged out)
 /help|Ask for help

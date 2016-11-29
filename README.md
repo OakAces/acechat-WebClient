@@ -16,7 +16,7 @@ it has since been streamlined into one page*
 *Users can access the orginal Dark theme by typing /toggleTheme*
 
 ![](https://raw.githubusercontent.com/OakAces/acechat-WebClient/master/docs/images/flowchart.png)
-*Flowchart of the program structure. Yes, it's hard to read. It was also hard to make.*
+*Flowchart of the program structure.*
 
 
 #User Commands

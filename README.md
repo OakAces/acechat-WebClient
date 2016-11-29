@@ -27,7 +27,7 @@ Command|Explanation
 /part [channel]|Part a channel
 /logoff|Part all channels and quit
 /logout|See /logoff
-/msg \<usrName\> \<message\>|Send a Private Message
+/msg \<userName\> \<message\>|Send a Private Message
 /whoami|Who are you?
 /invite \<user0\> [user1]...[usern]|Invite user(s) to the current channel
 \<message\>|Send a message
@@ -39,5 +39,6 @@ Command|Explanation
 /help|Ask for help
 
 #Client-to-Client Protocol
-For an explanation of the client-to-client protocol, please see docs/clientToClientProtocol.md
-or docs/clientToClientProtocol.pdf
+For an explanation of the client-to-client protocol, please see
+[docs/clientToClientProtocol.md](https://github.com/OakAces/acechat-WebClient/blob/master/docs/clientToClientProtocol.md) 
+or [docs/clientToClientProtocol.pdf](https://github.com/OakAces/acechat-WebClient/raw/master/docs/clientToClientProtocol.pdf)

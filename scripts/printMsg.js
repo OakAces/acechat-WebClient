@@ -1,3 +1,5 @@
+//prints a message to the screen without putting it in a channel first
+//param: string
 function printMsg(msg)
 {
 	var msgHeader="";

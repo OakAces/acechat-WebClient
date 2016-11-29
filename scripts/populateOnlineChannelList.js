@@ -1,3 +1,4 @@
+//populates user list in bottom right with list of users in current channel 
 function populateOnlineChannelList() 
 	{
 		document.getElementById("online-channel-list").innerHTML="";

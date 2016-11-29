@@ -1,3 +1,4 @@
+	//requests chanList from server
 	function requestChanList()
   {
     var msg = {

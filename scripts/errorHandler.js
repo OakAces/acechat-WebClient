@@ -1,5 +1,6 @@
 	//accepts a string containing an error message. 
 	//server errors must be deconstructed in the onmessage function
+	//Attempts to display to current channel, calls window.alert() if channel is null
 	function errorHandler(e)
 	{
 		msg = {

@@ -1,3 +1,4 @@
+//logs out of the client if WebSocket connection is closed
 function disconnect()
 {
 	channel=null;

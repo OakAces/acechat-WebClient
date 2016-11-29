@@ -1,3 +1,4 @@
+	//displays the help dialog
 	function help()
 	{
 		msgTxt =  "Channels are created by joining them and are deleted when they are empty.<br>"; 

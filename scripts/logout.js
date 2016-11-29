@@ -1,3 +1,4 @@
+	//logs the user out
 	function logout()
 	{
 		userName="";

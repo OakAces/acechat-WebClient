@@ -1,3 +1,4 @@
+//toggles between  the Light and Dark themes
 function toggleTheme()
 {
 	if(theme == "dark")

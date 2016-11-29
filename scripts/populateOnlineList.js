@@ -1,3 +1,4 @@
+//populates list in top right with list of users logged in to server
 function populateOnlineList()
 	{
 		document.getElementById("online-list").innerHTML="";

@@ -1,3 +1,4 @@
+//populates the channel list on the left with buttons
 function populateChannelList()
 	{
 		document.getElementById("channel-list").innerHTML="";

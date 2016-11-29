@@ -1,4 +1,4 @@
-	//gets user list from server, returns as array of strings
+	//requests user list from server
   function requestUsrList()
   {
 		var msg = {

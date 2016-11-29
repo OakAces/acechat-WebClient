@@ -1,3 +1,4 @@
+//returns a random hex color
 function randColor() 
 {
     var hex= '0123456789ABCDEF';

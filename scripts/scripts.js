@@ -1,3 +1,4 @@
+	// ""main"" class, defines global variables and prints login screen
 	var server = "wss://acechat.dyladan.me/ws/"
   var channel = null;
 	var userName = "";

@@ -1,3 +1,4 @@
+//given a channelObj, send a welcome message to that channel
 function chanMsg(e)
 {
 		var welcome = {

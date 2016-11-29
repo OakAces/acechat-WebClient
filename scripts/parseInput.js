@@ -1,4 +1,4 @@
-
+//processes user input
 function parseInput()
 {
 	var msgTxt = document.getElementById("chat-prompt").value;
@@ -6,9 +6,10 @@ function parseInput()
 	var msg;
 	document.getElementById("chat-prompt").value = "";
 
+	//user is logged in
 	if(channel != null)
 	{
-		//msg
+		//msg private message a user
 		if (msgTxt.match(/^\/msg\s*$/) || msgTxt.match(/^\/msg\s+\S+\s*$/)) 
 		{
 			errorHandler("/msg must accept at least two arguments");
@@ -58,7 +59,7 @@ function parseInput()
 			errorHandler("Invalid channel name");
 		}
 
-		//part
+		//attempt to part the specified channel
 		else if(msgTxt.match(/^\/part\s+\S+[.]*/))
 		{
 			msgArr.shift();
@@ -77,8 +78,6 @@ function parseInput()
 		}
 
 		//logout, logoff
-		//**parts all channels**, logs out
-		//ideally would part all channels, but it doesn't, and that's okay too.
 		else if (msgTxt.match(/^\/logoff(\s|$)/) || msgTxt.match(/^\/logout(\s|$)/))
 		{
 			logout();
@@ -248,8 +247,10 @@ function parseInput()
 			send(msg);
 		}
 	}
+	//user is not logged in
 	else if (channel == null)
 	{
+		//user  allows user to login
 		if(msgArr[0] == "/user")
 		{
 			userName = msgArr[1];
@@ -259,6 +260,8 @@ function parseInput()
 			else
 				login();
 		}
+
+		//server  allows user to join a non-default server
 		else if(msgArr[0] == "/server")
 		{
 			server = msgArr[1];

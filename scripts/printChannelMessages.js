@@ -1,4 +1,5 @@
 	//param: channelObj
+	//print the messages of the specified channel to the screen
 	function printChannelMessages(e)
 	{
 		document.getElementById("chat-log").innerHTML="";

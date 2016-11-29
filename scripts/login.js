@@ -1,3 +1,4 @@
+//logs the user into the server
 function login()
 {
 	try{

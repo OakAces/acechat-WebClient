@@ -37,3 +37,7 @@ Command|Explanation
 /user \<userName\>|Set your userName (must be logged out)
 /server \<server\>|Set the server address (must be logged out)
 /help|Ask for help
+
+#Client-to-Client Protocol
+For an explanation of the client-to-client protocol, please see docs/clientToClientProtocol.md
+or docs/clientToClientProtocol.pdf

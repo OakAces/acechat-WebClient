@@ -1,5 +1,3 @@
 *.aux
 *.log
 *.out
-/docs/*.pdf
-!UML.pdf

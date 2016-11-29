@@ -37,8 +37,19 @@ Command|Explanation
 /user \<userName\>|Set your userName (must be logged out)
 /server \<server\>|Set the server address (must be logged out)
 /help|Ask for help
+Mandatory arguments to commands are denoted by angle brackets < >
+
+Optional arguments to commands are denoted by square brackets [ ]
+
+/user and /server are only available before you log in. /toggleTheme is always available.
+
+All other commands are only available to logged in users.
+
 
 #Client-to-Client Protocol
 For an explanation of the client-to-client protocol, please see
-[docs/clientToClientProtocol.md](https://github.com/OakAces/acechat-WebClient/blob/master/docs/clientToClientProtocol.md) 
-or [docs/clientToClientProtocol.pdf](https://github.com/OakAces/acechat-WebClient/raw/master/docs/clientToClientProtocol.pdf)
+docs/clientToClientProtocol.md [[x]](https://github.com/OakAces/acechat-WebClient/blob/master/docs/clientToClientProtocol.md) 
+or docs/clientToClientProtocol.pdf [[x]](https://github.com/OakAces/acechat-WebClient/raw/master/docs/clientToClientProtocol.pdf)
+
+#Accessing the Client
+The client is currently available at https://acechat.dyladan.me [[x]](https://acechat.dyladan.me)

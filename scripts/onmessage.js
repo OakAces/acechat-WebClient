@@ -25,6 +25,7 @@
 				populateChannelList();
 				break;
 			case "MSG":
+				console.log("MSG received");
 				var msgTxt = msg.args[1];
 				msgTxt = msgTxt.replace(/</g, "&lt;");
 				msgTxt = msgTxt.replace(/>/g, "&gt;");

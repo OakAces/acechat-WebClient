@@ -8,7 +8,7 @@ function login()
 	}
 	channel = "startHere";
 	window.setTimeout(loginA,500);
-	window.setTimeout(loginB,500);
+	window.setTimeout(loginB,2000);
 }
 function loginA()
 {

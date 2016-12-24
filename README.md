@@ -1,21 +1,22 @@
 #acechat-WebClient
 
 Web client for the AceChat chat server
+Originally created for CSE 280 at Oakland University
 
-![](https://raw.githubusercontent.com/OakAces/acechat-WebClient/master/docs/images/screenshot22.png)
+![](https://raw.githubusercontent.com/nathalie-tate/acechat-WebClient/master/docs/images/screenshot22.png)
 *Screenshot of login dialog. There used to be a separate login page, but
 it has since been streamlined into one page*
 
-![](https://raw.githubusercontent.com/OakAces/acechat-WebClient/master/docs/images/screenshot23.png)
+![](https://raw.githubusercontent.com/nathalie-tate/acechat-WebClient/master/docs/images/screenshot23.png)
 *Users are not prompted with the rules for a valid user name unless they enter an invalid name*
 
-![](https://raw.githubusercontent.com/OakAces/acechat-WebClient/master/docs/images/screenshot24.png)
+![](https://raw.githubusercontent.com/nathalie-tate/acechat-WebClient/master/docs/images/screenshot24.png)
 *Screenshot of web UI*
 
-![](https://raw.githubusercontent.com/OakAces/acechat-WebClient/master/docs/images/screenshot25.png)
+![](https://raw.githubusercontent.com/nathalie-tate/acechat-WebClient/master/docs/images/screenshot25.png)
 *Users can access the orginal Dark theme by typing /toggleTheme*
 
-![](https://raw.githubusercontent.com/OakAces/acechat-WebClient/master/docs/images/flowchart.png)
+![](https://raw.githubusercontent.com/nathalie-tate/acechat-WebClient/master/docs/images/flowchart.png)
 *Flowchart of the program structure.*
 
 
@@ -48,8 +49,7 @@ All other commands are only available to logged in users.
 
 #Client-to-Client Protocol
 For an explanation of the client-to-client protocol, please see
-docs/clientToClientProtocol.md [[x]](https://github.com/OakAces/acechat-WebClient/blob/master/docs/clientToClientProtocol.md) 
-or docs/clientToClientProtocol.pdf [[x]](https://github.com/OakAces/acechat-WebClient/raw/master/docs/clientToClientProtocol.pdf)
+docs/clientToClientProtocol.md [[x]](https://github.com/nathalie-tate/acechat-WebClient/blob/master/docs/clientToClientProtocol.md) 
 
 #Accessing the Client
-The client is currently available at https://acechat.dyladan.me [[x]](https://acechat.dyladan.me)
+The client is currently available at https://acechat.dyladan.me and http://nathalietate.xyz/projects/acechat
